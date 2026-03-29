@@ -55,6 +55,8 @@ Features:
 	•	ACP deliverable pipeline
 
 The oracle currently focuses on BTC market structure.
+
+⸻
 ## Architecture
 
 ```mermaid
@@ -86,8 +88,6 @@ flowchart LR
 
     N --> O[Agents / Protocols]
 ```
-⸻
-
 Roadmap
 
 W4RO will evolve into a foundational risk intelligence layer for autonomous agents.

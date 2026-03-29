@@ -42,7 +42,7 @@ Example response:
   "leverage_cap": 3.0,
   "confidence": 0.5
 }
-
+```
 Current Version
 
 v1.0 – BTC Risk Oracle

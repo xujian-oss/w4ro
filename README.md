@@ -57,37 +57,7 @@ Features:
 The oracle currently focuses on BTC market structure.
 
 ⸻
-## Architecture
 
-```mermaid
-flowchart LR
-    A[Market Data] --> B[Feature Engine]
-    B --> C[Risk Dimension Scoring]
-
-    C --> D[Volatility Risk]
-    C --> E[Structure Risk]
-    C --> F[Leverage Risk]
-    C --> G[Liquidity Risk]
-    C --> H[Sentiment Risk]
-
-    D --> I[Penalty Engine]
-    E --> I
-    F --> I
-    G --> I
-    H --> I
-
-    I --> J[Risk Score]
-
-    J --> K[Regime Detection]
-    J --> L[Leverage Cap]
-    J --> M[Circuit Breaker]
-
-    K --> N[Oracle Response]
-    L --> N
-    M --> N
-
-    N --> O[Agents / Protocols]
-```
 Roadmap
 
 W4RO will evolve into a foundational risk intelligence layer for autonomous agents.

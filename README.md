@@ -1,4 +1,5 @@
 # W4RO
+Deterministic market risk intelligence for autonomous agents.
 
 W4RO is a deterministic risk oracle built for the emerging agent economy.
 
@@ -54,12 +55,11 @@ Features:
 	•	ACP deliverable pipeline
 
 The oracle currently focuses on BTC market structure.
-
 ## Architecture
 
 ```mermaid
 flowchart LR
-    A[Market Data<br/>OHLCV / Funding / OI] --> B[Feature Engine]
+    A[Market Data] --> B[Feature Engine]
     B --> C[Risk Dimension Scoring]
 
     C --> D[Volatility Risk]
@@ -77,14 +77,15 @@ flowchart LR
     I --> J[Risk Score]
 
     J --> K[Regime Detection]
-    J --> L[Leverage Cap Logic]
+    J --> L[Leverage Cap]
     J --> M[Circuit Breaker]
 
     K --> N[Oracle Response]
     L --> N
     M --> N
 
-    N --> O[Agents / Strategies / Protocols]
+    N --> O[Agents / Protocols]
+```
 ⸻
 
 Roadmap
